@@ -19,7 +19,7 @@ class PracticalTest extends TestCase
     /**
      * A basic unit test example.
      */
-    public function testAdd(): void
+    public function testAddNumeric(): void
     {
         $this->expectException(\InvalidArgumentException::class);
         \Practical::add("abc","xyz");

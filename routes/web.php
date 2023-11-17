@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/veggies/baigan', function () {
+    return 'welcome';
+
+});
+Route::get('/veggies/{veggieName}', function (string $veggieName) {
+    return $veggieName;
 });
