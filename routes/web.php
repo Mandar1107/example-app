@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Practicals\songs;
+use Practicals\Songs;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +35,4 @@ Route::get('/songs', function () {
     $song3->setArtist("A P Dhillon");
   
     return view('songs', [ 'songs' => [ $song1, $song2, $song3 ] ]); 
-  });
+  });   
